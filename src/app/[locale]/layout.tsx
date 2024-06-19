@@ -1,7 +1,7 @@
 import "@/app/globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import { useTranslations } from 'next-intl'
+import { Fonts } from "@/utils/fonts"
 
 export const metadata: Metadata = {
     title: {
@@ -18,7 +18,6 @@ export const metadata: Metadata = {
         "Time Tracking"
     ],
 }
-const inter = Inter({ subsets: ["latin"] })
 
 import { AOSInit } from "@/app/wrappers/aos"
 import Header from "@/components/header/page"
@@ -52,7 +51,7 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
     return (
         <html lang={locale}>
             <AOSInit />
-            <body className={`${inter.className} bg-white text-black`}>
+            <body className={`${Fonts.epilogue} ${Fonts.impact} bg-white text-black`}>
                 <Header localeHeader={localeHeader} />
                 <div className="pt-[50px]">
                     {children}
