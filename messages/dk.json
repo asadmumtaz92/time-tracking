@@ -1,0 +1,23 @@
+{
+    "Home": {
+        "header-section": "===================================HEADER SECTION",
+        "author": "Time Tracking",
+        "home": "Hjem",
+        "about": "Om",
+        "contact": "Kontakt",
+        "login": "Log på.",
+        "signup": "Tilmelde",
+        "contact-page": "===================================CONTACT PAGE",
+        "lets_connect": "LAD OS FORBINDE",
+        "say_hello": "Sig hej kl",
+        "for_more_info": "For mere info, her er min",
+        "resume": "Genoptag",
+        "downl_resume": "Download CV",
+        "name": "Navn",
+        "email": "E-mail",
+        "subject": "Emne",
+        "message": "Besked",
+        "submit": "Indsend",
+        "about-page": "===================================ABOUT PAGE"
+    }
+}

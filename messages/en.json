@@ -1,0 +1,23 @@
+{
+    "Home": {
+        "header-section": "===================================HEADER SECTION",
+        "author": "Time Tracking",
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "login": "Login",
+        "signup": "Sign Up",
+        "contact-page": "===================================CONTACT PAGE",
+        "lets_connect": "LET’S CONNECT",
+        "say_hello": "Say hello at",
+        "for_more_info": "For more info, here’s my",
+        "resume": "Resume",
+        "downl_resume": "Download Resume",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Submit",
+        "about-page": "===================================ABOUT PAGE"
+    }
+}
