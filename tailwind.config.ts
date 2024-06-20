@@ -21,6 +21,21 @@ const config: Config = {
             animation: {
                 scrollingLogo: "scroll 1000s linear infinite",
             },
+            colors: {
+                'bg': '#FDFDFD',
+                'primary': "#11005E",
+                'desc': '#5D5677',
+                'box': '#F9F9FA',
+                'box-strok': '#EDEDEE',
+                'tt1': '#E9DCBB',
+                'tt2': '#E9DCBB',
+                'tt3': '#E5CFE7',
+                'tt4': '#C1D3BB',
+                'tt5': '#D9E5CC',
+                'tt6': '#D9D0E6',
+                'border': '#EDEDEE',
+                'divider': '#E8E7EE',
+            },
             fontFamily: {
                 epilogue: ['var(--font-epilogue)'],
                 impact: ['var(--font-impact)'],
