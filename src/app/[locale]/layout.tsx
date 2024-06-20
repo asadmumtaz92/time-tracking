@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 import { AOSInit } from "@/app/wrappers/aos"
 import Header from "@/components/header/page"
+import Footer from "@/components/footer/page"
 
 interface RootLayoutProps {
     children: React.ReactNode
@@ -36,15 +37,10 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
     const localeHeader = {
         author: t('author'),
         home: t(`home`),
-        login: t(`login`),
-        signup: t(`signup`),
-        contact: t(`contact`),
-    }
-    const localeFooter = {
-        portfolio: t(`portfolio`),
         about: t(`about`),
         contact: t(`contact`),
-        author: t('author'),
+        login: t(`login`),
+        signup: t(`signup`),
     }
 
 
@@ -56,6 +52,7 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
                 <div className="pt-[50px]">
                     {children}
                 </div>
+                <Footer />
             </body>
         </html>
     )
