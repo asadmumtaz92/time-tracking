@@ -7,3 +7,9 @@
     text-wrap: balance;
   }
 }
+
+/* CUSTOM/GLOBAL STYLE */
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
