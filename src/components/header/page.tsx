@@ -2,7 +2,6 @@
 import { useState, useEffect, } from "react"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { X } from "lucide-react"
 
 import { Link } from "@/navigation"
 
@@ -120,14 +119,14 @@ export default function Header({ localeHeader }: any) {
                             </Link>
                             <Link
                                 onClick={handleLinkClick}
-                                href="/login"
+                                href="/auth/login"
                                 className={`no-underline font-[500] text-[1.5rem] mt-10 ${pathname.endsWith("/login") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.login}
                             </Link>
                             <Link
                                 onClick={handleLinkClick}
-                                href="/signup"
+                                href="/auth/signup"
                                 className={`no-underline font-[500] text-[1.5rem] mt-10 ${pathname.endsWith("/signup") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.signup}
@@ -166,13 +165,13 @@ export default function Header({ localeHeader }: any) {
                                 {localeHeader?.contact}
                             </Link>
                             <Link
-                                href="/login" data-aos-duration="1400" data-aos="fade-down"
+                                href="/auth/login" data-aos-duration="1400" data-aos="fade-down"
                                 className={`no-underline px-[10px] ${pathname.endsWith("/login") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.login}
                             </Link>
                             <Link
-                                href="/signup" data-aos-duration="1600" data-aos="fade-down"
+                                href="/auth/signup" data-aos-duration="1600" data-aos="fade-down"
                                 className={`no-underline px-[10px] ${pathname.endsWith("/signup") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.signup}
