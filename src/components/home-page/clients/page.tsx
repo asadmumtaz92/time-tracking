@@ -48,9 +48,9 @@ const Clients = () => {
 
 
     return (
-        <div className="relative pt-[70px] md:pt-[100px] lg:pt-[130px]">
-            <p data-aos="fade-up" className="text-primary [font-size:_clamp(1rem,1rem+1vw,3rem)] text-[1.125rem]leading-[1.625rem] font-[500] text-center">
-                Our Trusted Clients
+        <div className="relative pt-[70px] md:pt-[100px] xl:pt-[130px]">
+            <p data-aos="fade-up" className="text-primary [font-size:_clamp(1rem,1rem+1vw,3rem)] font-[500] text-center">
+                Our Trusted Partner
             </p>
 
             <div className="flex overflow-hidden pt-[80px]" data-aos="fade-up">
