@@ -56,9 +56,10 @@ const Login = () => {
         e.preventDefault()
         setError('')
         setLoading(true)
+        const { email, password, emailValid, passwordValid } = formData
         try {
-            if (formData?.email && formData?.email?.length > 6 && formData?.password && formData?.emailValid && formData?.passwordValid) {
-                // loginHandlers(formData?.email, formData?.password, successCallBack, faildCallBack)
+            if (email && email?.length > 6 && password && emailValid && passwordValid) {
+                // loginHandlers(email, password, successCallBack, faildCallBack)
             }
             else {
                 setError('Enter valid email & password')
@@ -125,7 +126,7 @@ const Login = () => {
                         disabled={loading ? true : false}
                     />
 
-                    <button disabled={loading} type='submit' className='w-full text-white bg-primary text-[1rem] font-[600] border-[1px] border-border text-disable h-[45px] outline-0 rounded-[8px] focus:border-ip-border my-[12px]'>
+                    <button disabled={loading} type='submit' className='w-full bg-primary hover:bg-primary/[0.8] text-white text-[1rem] font-[600] border-[1px] border-border text-disable h-[45px] outline-0 rounded-[8px] focus:border-ip-border my-[12px]'>
                         {loading
                             ? <div className='w-full h-full flex justify-center items-center'>
                                 <Loader className="mr-2 h-5 w-5 animate-spin" /> Please wait
@@ -133,7 +134,7 @@ const Login = () => {
                             : 'Log In'
                         }
                     </button>
-                    {error && <p className='text-[0.8rem] text-error w-full max-w-[400px]'>{error}</p>}
+                    {error && <p className='text-[0.8rem] text-red-500 text-center w-full'>{error}</p>}
                 </form>
             </div>
         </div >
