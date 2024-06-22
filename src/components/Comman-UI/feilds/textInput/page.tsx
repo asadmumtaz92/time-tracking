@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { LucideEye, LucideEyeOff, } from 'lucide-react'
 
 interface TextInputProps {
     label?: string;
@@ -32,16 +33,19 @@ const TextInput = ({
 }: TextInputProps) => {
 
 
+    const [showPass, setShowPass] = useState(type)
+
+
     return (
-        <div className='flex flex-col w-full mb-[24px]'>
-            {label && <label htmlFor={label} className={`text-desc text-[1rem] leading-[25.6px] font-[400] mb-[8px]`}>{label}</label>}
+        <div className='flex flex-col w-full mb-[14px] relative'>
+            {label && <label htmlFor={label} className={`font-[500] text-desc text-[1rem] leading-[25.6px] font-[400] capitalize mb-[5px]`}>{label}</label>}
             <input
                 id={label}
-                type={type}
+                type={showPass}
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
-                className={`bg-card text-desc text-[1rem] leading-[25.6px] font-[400] px-[10px] py-[6px] rounded-[4px] w-full !border-[1px] border-border !outline-none !ring-none focus:border-border ${value && !error && '!border-red-500'}`}
+                className={`text-desc text-[1rem] leading-[25.6px] font-[400] px-[10px] py-[6px] rounded-[4px] w-full !border-[1px] border-border !outline-none !ring-none focus:border-border ${(value && !error) && '!border-red-500'} ${type == 'password' && '!pr-[35px]'}`}
                 minLength={minLength && minLength}
                 name={name}
                 disabled={disabled}
@@ -50,6 +54,14 @@ const TextInput = ({
                 required={required}
                 autoComplete='none'
             />
+            {type == 'password'
+                && <small
+                    className="flex items-center absolute bottom-0 right-[5px] h-[40px]"
+                    onClick={() => showPass == 'password' ? setShowPass('text') : setShowPass('password')}
+                >
+                    {showPass == 'password' ? <LucideEyeOff className='text-[0.6rem] h-[20px]' /> : <LucideEye className='text-[0.6rem] h-[20px]' />}
+                </small>
+            }
         </div>
     )
 }
