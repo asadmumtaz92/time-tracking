@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     ],
 }
 
-import { AOSInit } from "@/app/wrappers/aos"
+import { AOSInit } from "@/components/wrappers/aos"
+import CursorFollower from "@/components/wrappers/cursor/page"
 import Header from "@/components/header/page"
 
 interface RootLayoutProps {
@@ -47,6 +48,7 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
         <html lang={locale}>
             <AOSInit />
             <body className={`${Fonts.epilogue} ${Fonts.impact} bg-white text-black`}>
+                <CursorFollower />
                 <Header localeHeader={localeHeader} />
                 <div className="pt-[50px]">
                     {children}
