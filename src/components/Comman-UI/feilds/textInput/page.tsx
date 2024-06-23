@@ -59,7 +59,7 @@ const TextInput = ({
                     className="flex items-center absolute bottom-0 right-[5px] h-[40px]"
                     onClick={() => showPass == 'password' ? setShowPass('text') : setShowPass('password')}
                 >
-                    {showPass == 'password' ? <LucideEyeOff className='text-[0.6rem] h-[20px]' /> : <LucideEye className='text-[0.6rem] h-[20px]' />}
+                    {showPass == 'password' ? <LucideEye className='text-[0.6rem] h-[20px]' /> : <LucideEyeOff className='text-[0.6rem] h-[20px]' />}
                 </small>
             }
         </div>
