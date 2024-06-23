@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import { Link } from '@/navigation'
 import { useTranslations } from 'next-intl'
 
 import SocialLinks from './sub-components/social-links'
@@ -8,7 +6,7 @@ import SiteLinks from './sub-components/site-links'
 import ResoursesLink from './sub-components/resourses'
 
 
-function page() {
+const Footer = () => {
 
 
     const t = useTranslations("Home")
@@ -32,10 +30,6 @@ function page() {
                         <h1 className='flex text-primary text-[1.75rem] leading-[34px] text-center tracking-[0.01rem] font-[500] mb-[12px]'>
                             {t('join')} {t('author')}!
                         </h1>
-
-                        {/* <p className='flex text-desc text-[1rem] leading-[1.5rem] text-center tracking-[0.01rem] font-[400]'>
-                            Start your journey today.
-                        </p> */}
                     </div>
                 </>
 
@@ -52,14 +46,15 @@ function page() {
                                         {t('join_our')}
                                     </p>
                                     {/* Subscribe */}
-                                    <form method='POST' className='flex flex-col sm:flex-row items-center .justify-start w-full pt-[30px]'>
+                                    <form method='POST' className='flex flex-col sm:flex-row items-center w-full pt-[30px]'>
                                         <input
+                                            data-aos="fade-up"
                                             type='text'
                                             autoCorrect=''
                                             placeholder={t('email_plac')}
                                             className='text-desc h-[48px] px-[22px] rounded-[24px] w-full min-w-[150px] max-w-[400px] mr-[10px]'
                                         />
-                                        <div className='custom-btn flex items-center overflow-hidden bg-primary hover:bg-primary/[0.8] rounded cursor-pointer min-w-[150px] max-w-[400px] h-[48px] mt-[20px] sm:mt-0'>
+                                        <div data-aos="fade-up" className='custom-btn flex items-center overflow-hidden bg-primary hover:bg-primary/[0.8] rounded cursor-pointer min-w-[150px] max-w-[400px] h-[48px] mt-[20px] sm:mt-0'>
                                             <div className='btn-text w-full text-center text-white'>
                                                 {t('subsc')}
                                             </div>
@@ -68,7 +63,7 @@ function page() {
                                 </div>
 
                                 {/* LINKS */}
-                                <div className='w-full p-[8px] pt-0 mt-[30px] lg:mt-0'>
+                                <div className='w-full p-[8px] pt-0 mt-[50px] lg:mt-0'>
                                     <div className={`grid grid-cols-3 gap-x-[20px]`}>
                                         <SiteLinks />
                                         <ResoursesLink />
@@ -83,7 +78,7 @@ function page() {
 
             {/* COPY RIGHTS */}
             <div className="col-start-1 col-end-13">
-                <div className={`grid grid-cols-1 border-t-[1px] border-t-divider`}>
+                <div className={`grid grid-cols-1 border-t-[1px] border-t-divider mt-6 lg:mt-0`}>
                     <div className='w-full text-nowrap pt-[32px] pb-[24px] text-center text-desc'>
                         {`© 2024 ${t('author')}. ${t('all_right')}`}
                     </div>
@@ -93,4 +88,4 @@ function page() {
     )
 }
 
-export default page
+export default Footer
