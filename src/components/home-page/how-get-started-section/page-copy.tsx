@@ -10,19 +10,19 @@ const Benefits = () => {
     const BenefitData = [
         {
             id: 1,
-            image: '/icons/benefit1.png',
+            image: '/icons/company.png',
             title: `Step One`,
             description: `Register company`,
         },
         {
             id: 2,
-            image: '/icons/benefit2.png',
+            image: '/icons/employee.png',
             title: `Step Two`,
             description: `Add employee.`,
         },
         {
             id: 3,
-            image: '/icons/benefit3.png',
+            image: '/icons/logging.png',
             title: `Step Three`,
             description: `Start logging.`,
         },
@@ -32,13 +32,13 @@ const Benefits = () => {
     const Items = (data: any) => {
         const { id, image, title, description } = data?.data
         return (
-            <div key={id} className={`flex items-center`}>
+            <div key={id} className={`flex items-start`}>
                 <Image data-aos="fade-up" src={image} priority className='object-contain gap-[10px]' width={44} height={44} alt={title} />
-                <div className='flex flex-col ml-[10px]'>
-                    <h4 data-aos="fade-up" className='text-primary text-left text-[18px] leading-[26px] md:text-[20px] md:leading-[28px] font-[500] mb-[4px]'>
+                <div className='flex flex-col ml-[15px]'>
+                    <h4 data-aos="fade-up" className='text-primary text-left text-[1.25rem] leading-[1.75rem] lg:text-[1.5rem] lg:leading-[2.125rem] font-[500]'>
                         {title}
                     </h4>
-                    <p data-aos="fade-up" className='text-desc text-left text-[16px] font-[400]'>
+                    <p data-aos="fade-up" className='text-desc text-left text-[1rem] leading-[1.5rem] md:text-[1.125rem] leading-[1.625rem] font-[300]'>
                         {description}
                     </p>
                 </div>
@@ -51,7 +51,7 @@ const Benefits = () => {
         <div className='flex flex-col py-[70px] md:py-[100px] lg:py-[130px] px-[20px] md:px-[50px] xl:px-[80px] border-b min-h-[calc(100vh-50px)] justify-center'>
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] lg:gap-x-[32px]`}>
                 <div className={`flex items-center sh-full justify-center h-full w-full !rounded-[24px]`}>
-                    <Image data-aos="fade-up" src={'/clients/client-1.png'} priority className='flex w-[100%] h-[90%] md:max-w-[500px] lg:h-[100%] xl:w-[90%] xl:h-[90%]' width={110} height={100} alt='' />
+                    <Image data-aos="zoom-in" data-aos-duration="2000" src={'/images/hgt.png'} priority className='flex w-[100%] h-[90%] md:max-w-[500px] lg:h-[100%] xl:w-[90%] xl:h-[90%]' width={110} height={100} alt='' />
                 </div>
 
                 <div className='flex flex-col justify-center mt-[40px] md:mt-0'>
