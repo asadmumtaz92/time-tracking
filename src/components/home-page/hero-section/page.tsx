@@ -10,16 +10,16 @@ const HeroSection = () => {
 
 
     return (
-        <div className={`flex flex-col justify-center items-center gap-y-[30px] min-h-[calc(100vh-50px)] bg-[url('/bg/hero.png')] bg-cover bg-no-repeat bg-bottom px-[20px] md:px-[50px] xl:px-[80px]`}>
+        <div className={`flex flex-col justify-center items-center gap-y-[30px] min-h-[calc(100vh-50px)] border-b cbg-[url('/bg/hero.png')] bg-cover bg-no-repeat bg-bottom px-[20px] md:px-[50px] xl:px-[80px]`}>
             <h2 data-aos="fade-down" className="!font-epilogue !font-[500] text-primary [font-size:_clamp(1rem,1rem+1vw,3rem)] text-center w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw]">
                 {t('hs_title')}
             </h2>
 
-            <h2 data-aos="fade-up" className="!font-epilogue text-primary text-3xl !font-[600] tracking-tight">
+            <h2 data-aos="fade-up" data-aos-duration="1700" className="!font-epilogue text-primary text-3xl !font-[600] tracking-tight">
                 {t('hs_day')}
             </h2>
 
-            <Link href={'/contact'} data-aos="fade-up" data-aos-duration="1500" className="!font-epilogue !font-[400] text-white text-[1rem] leading-[1rem] tracking-[0.5px] bg-primary/[0.8] hover:bg-primary pb-[12px] pt-[15px] px-[30px] border-[1px] border-primary shadow rounded-[30px]">
+            <Link href={'/contact'} data-aos="fade-up" data-aos-duration="2500" className="!font-epilogue !font-[400] text-white text-[1rem] leading-[1rem] tracking-[0.5px] bg-primary/[0.8] hover:bg-primary pb-[12px] pt-[15px] px-[30px] border-[1px] border-primary shadow rounded-[30px]">
                 {t('hs_sche')}
             </Link>
         </div>
