@@ -51,7 +51,7 @@ const Benefits = () => {
         <div className='flex flex-col py-[70px] md:py-[100px] lg:py-[130px] px-[20px] md:px-[50px] xl:px-[80px] border-b min-h-[calc(100vh-50px)] justify-center'>
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] lg:gap-x-[32px]`}>
                 <div className={`flex items-center sh-full justify-center h-full w-full !rounded-[24px]`}>
-                    <Image data-aos="zoom-in" data-aos-duration="2000" src={'/clients/client-1.png'} priority className='flex w-[100%] h-[90%] md:max-w-[500px] lg:h-[100%] xl:w-[90%] xl:h-[90%]' width={110} height={100} alt='' />
+                    <Image data-aos="zoom-in" data-aos-duration="2000" src={'/images/hgt.png'} priority className='flex w-[100%] h-[90%] md:max-w-[500px] lg:h-[100%] xl:w-[90%] xl:h-[90%]' width={110} height={100} alt='' />
                 </div>
 
                 <div className='flex flex-col justify-center mt-[40px] md:mt-0'>
