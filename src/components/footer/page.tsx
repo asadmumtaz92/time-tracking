@@ -1,9 +1,9 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
 
-import SocialLinks from './sub-components/social-links'
 import SiteLinks from './sub-components/site-links'
 import ResoursesLink from './sub-components/resourses'
+import SocialLinks from './sub-components/social-links'
 
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
                 {/* TOP HEADINGS */}
                 <>
                     <div className="flex justify-center mt-[50px] md:mt-0">
-                        <div data-aos="fade-up" className="flex items-center justify-center w-auto m-auto bg-white shadow rounded-[30px] px-[15px] py-[7px]">
+                        <div data-aos="zoom-in" data-aos-duration="2000" className="flex items-center justify-center w-auto m-auto bg-white shadow rounded-[30px] px-[15px] py-[7px]">
                             {/* <Image src="/icons/rocket.png" priority className='w-[24px] h-[24px]' alt="rocket" height={10} width={10} /> */}
                             <p className="text-desc font-[600] text-[0.75rem] lg:text-[1rem] leading-[1.5rem] mt-1 ml-[6px]">
                                 {t('start_jour')}
@@ -79,7 +79,7 @@ const Footer = () => {
             {/* COPY RIGHTS */}
             <div className="col-start-1 col-end-13">
                 <div className={`grid grid-cols-1 border-t-[1px] border-t-divider mt-6 lg:mt-0`}>
-                    <div className='w-full text-nowrap pt-[32px] pb-[24px] text-center text-desc'>
+                    <div className='w-full pt-[32px] pb-[24px] text-center text-desc'>
                         {`© 2024 ${t('author')}. ${t('all_right')}`}
                     </div>
                 </div>
