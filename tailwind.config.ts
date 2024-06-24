@@ -17,9 +17,18 @@ const config: Config = {
                     "0%": { transform: "translateX(0)" },
                     "100%": { transform: "translateX(-100%)" },
                 },
+                "background-shine": {
+                    from: {
+                        backgroundPosition: "0 0",
+                    },
+                    to: {
+                        backgroundPosition: "-200% 0",
+                    },
+                },
             },
             animation: {
-                scrollingLogo: "scroll 1000s linear infinite",
+                scrollingLogo: "scroll 500s linear infinite",
+                "background-shine": "background-shine 2s linear infinite",
             },
             colors: {
                 'bg': '#FDFDFD',
